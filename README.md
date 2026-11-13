@@ -12,11 +12,12 @@ The bundled data (`skills/training-hub/assets/sample-backup.json`) is a test fix
 
 ```bash
 hermes skills tap add is-ClarkHu/hermes-training-hub-skill
-hermes skills install training-hub
+hermes skills install is-ClarkHu/hermes-training-hub-skill/training-hub
 hermes chat --oneshot -q "/training-hub what should I train today?"
 ```
 
-Requirements: Python 3.11+ standard library only (no pip packages). Weather uses the free
+Use the full identifier: the short name `training-hub` alone also matches other community
+skills on the public hubs. Requirements: Python 3.11+ standard library only (no pip packages). Weather uses the free
 Open-Meteo API; set `TH_WEATHER=0` to work offline.
 
 ## What it does
